@@ -12,6 +12,11 @@
        <param-value>.xhtml</param-value>
     </context-param>
 
+    <context-param>
+        <param-name>javax.faces.FACELETS_RESOURCE_RESOLVER</param-name>
+        <param-value>org.jboss.capedwarf.admin.CustomResourceResolver</param-value>
+    </context-param>
+
     <!-- GAE doesn't work with the Mojarra default startup -->
     <context-param>
        <param-name>com.sun.faces.enableMultiThreadedStartup</param-name>
